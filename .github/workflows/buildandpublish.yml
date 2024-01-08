@@ -42,7 +42,7 @@ jobs:
          path: dist/
     - name: list files in dist after build
       run: |
-          ls -l ./dist/restaurantproject/browser/
+          ls -l ./dist/course-project/browser/
 
   publish:
     needs: build
@@ -69,5 +69,5 @@ jobs:
 
 
     - name: Upload to S3
-      run: aws s3 sync ./dist/restaurantproject/browser/ s3://angularuicode/  --debug
+      run: aws s3 sync ./dist/course-project/browser/ s3://angularuicode/  --debug
 

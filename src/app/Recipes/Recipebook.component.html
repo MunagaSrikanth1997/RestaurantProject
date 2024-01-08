@@ -1,0 +1,14 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <app-recipe-list (displayDecipeDetails)="displayRecipeDetails($event)"></app-recipe-list>
+        </div>
+        <div class="col-md-7">
+            <app-recipe-details [recipe]="recipeDetails"></app-recipe-details>
+        </div>
+    </div>
+
+</div>
+
+

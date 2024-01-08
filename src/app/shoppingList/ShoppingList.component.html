@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-10">
+      <app-shoppinglist-edit (onIngredientAdd)="addShoppingList($event)" (onClearIngredient)="clearShoppingList($event)"></app-shoppinglist-edit>
+    </div>
+    <h1>ShoppingList</h1>
+    <hr />
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let ingredient of getIngredientsList();index as i"
+      (click)="deleteIngredient(i)">
+        {{ ingredient.name }} ({{ ingredient.amount }})</a
+      >
+    </ul>
+  </div>
+</div>

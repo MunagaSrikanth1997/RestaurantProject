@@ -28,7 +28,7 @@ jobs:
     - name: list files after build
       run: |
           ls -l .
-          ls -l ./dist/
+          ls -l ./dist/course-project
     # - name: Package Artifacts
     #   run: |
     #     mkdir packaged
